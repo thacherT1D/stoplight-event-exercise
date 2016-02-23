@@ -16,22 +16,38 @@ var stopLight = document.getElementById('stopLight');
 var slowLight = document.getElementById('slowLight');
 var goLight = document.getElementById('goLight');
 
+// stopButton.addEventListener('click',function(e){
+//   stopLight.style.backgroundColor = 'red';
+// });
+// stopButton.addEventListener('dblclick',function(e){
+//   stopLight.style.backgroundColor = 'black';
+// });
+
+// slowButton.addEventListener('click',function(e){
+//   slowLight.style.backgroundColor = 'yellow';
+// });
+// slowButton.addEventListener('dblclick',function(e){
+//   slowLight.style.backgroundColor = 'black';
+// });
+// goButton.addEventListener('dblclick',function(e){
+//   goLight.style.backgroundColor = 'black';
+// });
+// goButton.addEventListener('click',function(e){
+//   goLight.style.backgroundColor = 'green';
+// });
+//single click to toggle back and forth
 stopButton.addEventListener('click',function(e){
-  stopLight.style.backgroundColor = 'red';
+  var color;
+  stopLight.style.backgroundColor === 'red' ? color =  "" : color = 'red';
+  stopLight.style.backgroundColor = color;
 });
 slowButton.addEventListener('click',function(e){
-  slowLight.style.backgroundColor = 'yellow';
+  var color;
+  slowLight.style.backgroundColor === 'yellow' ? color =  "" : color = 'yellow';
+  slowLight.style.backgroundColor = color;
 });
 goButton.addEventListener('click',function(e){
-  goLight.style.backgroundColor = 'green';
-});
-
-stopButton.addEventListener('dblclick',function(e){
-  stopLight.style.backgroundColor = 'black';
-});
-slowButton.addEventListener('dblclick',function(e){
-  slowLight.style.backgroundColor = 'black';
-});
-goButton.addEventListener('dblclick',function(e){
-  goLight.style.backgroundColor = 'black';
+  var color;
+  goLight.style.backgroundColor === 'green' ? color =  "" : color = 'green';
+  goLight.style.backgroundColor = color;
 });
